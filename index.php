@@ -68,7 +68,7 @@ function get_form_data()
         //var_dump($result);
 
         if ($result) {
-            header('Location: http://localhost?message=success');
+            header('Location: https://cours.bienconduire.ch?message=success');
         } else {
             $error = $result['message'];
         }
