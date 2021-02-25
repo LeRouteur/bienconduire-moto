@@ -51,7 +51,7 @@ if (!empty($_GET)) {
 <main style="margin-top: 15px;" class="container-fluid text-center bg-light2 mt-3 mb-3">
     <section class="container">
         <h2 class="text-center mb-xl">Inscription au cours de
-            préparation <?php if (!empty($_GET)) {
+            préparation <?php if (!empty($_GET['course'])) {
                 echo "- " . treat_parameter($course_type);
             } ?></h2>
         <div class="container border-top mt-3">
