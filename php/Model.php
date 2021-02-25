@@ -9,12 +9,12 @@ include __DIR__ . "../../php/Config.php";
 
 class Model
 {
-    private string $name;
-    private string $firstname;
-    private string $address;
-    private string $phone;
-    private string $email;
-    private string $course;
+    private $name;
+    private $firstname;
+    private $address;
+    private $phone;
+    private $email;
+    private $course;
 
     public function __construct(string $name, string $firstname, string $address, string $phone, string $email, string $course)
     {
