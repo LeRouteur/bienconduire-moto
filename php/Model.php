@@ -109,7 +109,7 @@ class Model
 
                     // Define sender and recipients settings
                     $mail->setFrom("notifications.storagehost@gmail.com", 'STORAGEHOST - Hosting Services');
-                    $mail->addAddress($this->email);
+                    $mail->addAddress('buchs@bienconduire.ch');
 
                     // Content
                     $mail->isHTML(true);

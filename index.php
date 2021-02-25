@@ -63,7 +63,7 @@ function get_form_data()
         }
 
         // Send the email
-        $result = (new Model())->send_mail();
+        $result = (new Model($valid_data['name'], $valid_data['firstname'], $valid_data['address'], $valid_data['phone'], $valid_data['email'], $valid_data['course']))->send_mail();
 
         //var_dump($result);
 
