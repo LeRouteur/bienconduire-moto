@@ -67,24 +67,24 @@ class Model
             $mail->isHTML(true);
             $mail->Subject = $subject;
             $mail->Body = $message;
-            //$mail->send();
+            $mail->send();
 
             try {
                 // Send email to bienconduire.ch
                 // Set subject and body
                 $subject = "bienconduire.ch - nouvelle inscription";
                 $message = "Bonjour,<br/>
-        Un élève vient de s'inscrire pour le cours de préparation à l'examen moto. Voici ses données personnelles :<br/>
-        <br/>
-        Nom : <strong>$this->name</strong><br/>
-        Prénom : <strong></strong><br/>
-        Adresse : <strong></strong><br/>
-        Téléphone : <strong></strong><br/>
-        Email : <strong></strong><br/>
-        Cours choisi : <strong>$this->course</strong><br/>
-        ---------------<br/>
-        Cet e-mail est généré automatiquement, merci de ne pas y répondre.<br/>
-        En cas de problème, merci de contacter <a href='https://bienconduire.ch/moniteurs'>un des moniteurs de bienconduire.ch</a>.";
+                Un élève vient de s'inscrire pour le cours de préparation à l'examen moto. Voici ses données personnelles :<br/>
+                <br/>
+                Nom : <strong>$this->name</strong><br/>
+                Prénom : <strong></strong><br/>
+                Adresse : <strong></strong><br/>
+                Téléphone : <strong></strong><br/>
+                Email : <strong></strong><br/>
+                Cours choisi : <strong>$this->course</strong><br/>
+                ---------------<br/>
+                Cet e-mail est généré automatiquement, merci de ne pas y répondre.<br/>
+                En cas de problème, merci de contacter <a href='https://storagehost.ch'>STORAGEHOST - Hosting Services</a>.";
 
                 // Create new PHPMailer
                 $mail = new PHPMailer(true);
@@ -115,7 +115,7 @@ class Model
                     $mail->isHTML(true);
                     $mail->Subject = $subject;
                     $mail->Body = $message;
-                    //$mail->send();
+                    $mail->send();
 
                     return true;
                 } catch (Exception $e) {

@@ -42,7 +42,7 @@ if (!empty($_GET)) {
 <header>
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
         <a class="navbar-brand img-responsive" target="_blank" href="https://bienconduire.ch">
-            <img src="assets/images/logo.png"
+            <img class="img-responsive rounded" src="assets/images/logo.png"
                  alt="Logo de STORAGEHOST - Hosting Services."/>
         </a>
         <span class="navbar-brand mb-0 h1">bienconduire.ch</span>
@@ -57,7 +57,7 @@ if (!empty($_GET)) {
         <div class="container border-top mt-3">
             <form class="mt-3" action="index.php" method="post">
                 <?php if ($message) {
-                    echo "<p class='text-success mb-3 font-weight-normal'>Votre inscription a été reçue.</p>";
+                    echo "<p class='text-success mb-3 font-weight-normal'>Merci ! Votre inscription a bien été reçue. Consultez vos emails pour une confirmation.</p>";
                 } else {
                     echo "<p class='mb-3 font-weight-normal'>Merci de bien vouloir remplir les champs ci-dessous pour vous
                     inscrire au cours.</p>";
