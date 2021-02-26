@@ -57,7 +57,7 @@ if (!empty($_GET)) {
         <div class="container border-top mt-3">
             <form class="mt-3" action="index.php" method="post">
                 <?php if ($message) {
-                    echo "<p class='text-success mb-3 font-weight-normal'>Merci ! Votre inscription a bien été reçue. Consultez vos emails pour une confirmation.</p>";
+                    echo "<p class='text-info mb-3 font-weight-normal'>Merci ! Votre inscription a bien été reçue. Consultez vos emails pour une confirmation.</p>";
                 } else {
                     echo "<p class='mb-3 font-weight-normal'>Merci de bien vouloir remplir les champs ci-dessous pour vous
                     inscrire au cours.</p>";

@@ -56,7 +56,7 @@ function get_form_data()
 
         // Validate course
         if ($course == "maneuver" || $course == "circulation" || $course == "braking" || $course == "maneuver_and_circulation") {
-            $valid_data['course'] = $course;
+            $valid_data['course'] = treat_parameter($course);
         } else {
             $error = "course";
             return;
