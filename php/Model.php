@@ -36,7 +36,7 @@ class Model
         Le cours choisi est : <strong>$this->course</strong><br/>
         ---------------<br/>
         Cet e-mail est généré automatiquement, merci de ne pas y répondre.<br/>
-        En cas de problème, merci de contacter <a href='https://bienconduire.ch/moniteurs'>un des moniteurs de bienconduire.ch</a>.";
+        En cas de problème, merci de contacter <a href='tel:0792272094'>Christophe Buchs - 079 227 20 94</a>.";
 
         // Create new PHPMailer
         $mail = new PHPMailer(true);
@@ -77,10 +77,10 @@ class Model
                 Un élève vient de s'inscrire pour le cours de préparation à l'examen moto. Voici ses données personnelles :<br/>
                 <br/>
                 Nom : <strong>$this->name</strong><br/>
-                Prénom : <strong></strong><br/>
-                Adresse : <strong></strong><br/>
-                Téléphone : <strong></strong><br/>
-                Email : <strong></strong><br/>
+                Prénom : <strong>$this->firstname</strong><br/>
+                Adresse : <strong>$this->address</strong><br/>
+                Téléphone : <strong>$this->phone</strong><br/>
+                Email : <strong>$this->email</strong><br/>
                 Cours choisi : <strong>$this->course</strong><br/>
                 ---------------<br/>
                 Cet e-mail est généré automatiquement, merci de ne pas y répondre.<br/>
